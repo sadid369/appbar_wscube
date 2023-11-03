@@ -1,4 +1,5 @@
 import 'package:appbar_wscube/home_page.dart';
+import 'package:appbar_wscube/tab_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const TabPage(),
     );
   }
 }
